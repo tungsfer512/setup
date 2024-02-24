@@ -1,0 +1,29 @@
+---
+- name: win_chocolatey install RIPT Lab
+  hosts: all
+  become: false
+  gather_facts: false
+  vars:
+    - packages:
+        - git
+        - veyon
+        - python310
+        - openjdk
+        - postgresql
+        - mysql
+        - mysql.odbc
+        - mysql-connector-java
+        - mysql.workbench
+        - mysql-python
+        - pycharm-community
+        - dbeaver
+        - vscode
+        - intellijidea-community
+        - androidstudio
+        - nodejs-lts
+        - tomcat
+  tasks:
+    - name: install packages
+      chocolatey.chocolatey.win_chocolatey:
+        name: "{{ packages }}"
+        state: present

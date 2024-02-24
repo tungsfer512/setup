@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>riptfreeze</id>
+    <version>1.0.0</version>
+    <title>RiptFreeze (Install)</title>
+    <owners>tungsfer512</owners>
+    <authors>tungsfer512</authors>
+    <tags>riptfreeze ript</tags>
+    <summary>RIPT Toolwiz Time Freeze</summary>
+    <description>RIPT Toolwiz Time Freeze</description>
+    <projectUrl>https://github.com/tungsfer512/ript_install</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/tungsfer512/ript_install/main/RiptFreeze/riptfreeze.png</iconUrl>
+    <projectSourceUrl>https://github.com/tungsfer512/ript_install</projectSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
